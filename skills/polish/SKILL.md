@@ -34,6 +34,8 @@ Define completion in a short working note: target screen or component, problems 
 
 Inspect the files and rendered UI relevant to the target. Use the host's approved file, browser, app, and service tools. Prefer an authenticated CMS connector when the target lives in a CMS. For that workflow, read [references/cms.md](references/cms.md).
 
+For SwiftUI/UIKit projects, also read [references/ios.md](references/ios.md).
+
 Find:
 
 - The component or page source, styles, tokens, and existing layout conventions.
