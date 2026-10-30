@@ -1,15 +1,16 @@
-# Daymark: a real polish pass on a demo fixture
+# Daymark: from rough prototype to polished interface
 
-Daymark is a fictional workspace made specifically for this example. Its starter has deliberately inconsistent card padding, preview sizes, and action placement. It is not a production app or an independent benchmark.
+Daymark is a fictional workspace made specifically for this example. Its starter deliberately combines oversized headings, competing button styles, mismatched cards, cropped illustrations, and mobile overflow. It is not a production app or an independent benchmark.
 
-The before and after images are actual, unretouched browser captures of the included source. The GIF adds labels below those captures and switches from before to after. It shows the result of a real editing pass, not a recording of an agent writing code.
+The before and after images are actual, unretouched browser captures of the included source. The GIF adds labels below those captures and switches from before to after. The starter's defects were expanded for this revision to make the contrast more visible; the finished design is unchanged. This is a constructed demonstration, not a recording of an agent writing code.
 
 ## The request
 
 ```text
-$polish the project grid. Fix inconsistent padding, uneven preview sizes,
-and misaligned action rows. Improve the toolbar and title hierarchy using
-the existing identity. Keep all copy, artwork, links, and behavior intact.
+$polish the whole workspace. Establish a clear heading hierarchy, unify
+controls and card styles, show the complete square artwork, and fix the
+mobile overflow. Keep the approved brand, all copy, artwork, links, and
+behavior intact.
 ```
 
 The [project profile](POLISH.md) sets the constraints. The pass followed the Polish skill's scope, audit, narrow implementation, and rendered verification workflow.
@@ -18,11 +19,19 @@ The [project profile](POLISH.md) sets the constraints. The pass followed the Pol
 
 | Before | After |
 | --- | --- |
-| Different card padding, preview widths, and action positions. | Consistent padding, complete square artwork, and aligned action rows. |
-| [![Daymark before polishing](../../docs/media/before-desktop.jpg)](../../docs/media/before-desktop.jpg) | [![Daymark after polishing](../../docs/media/after-desktop.jpg)](../../docs/media/after-desktop.jpg) |
+| Competing headings, three unrelated card styles, cropped artwork, and drifting actions. | Clear hierarchy, a shared component style, complete illustrations, and aligned actions. |
+| [![Daymark before polishing](../../docs/media/before-desktop.jpg?revision=2)](../../docs/media/before-desktop.jpg?revision=2) | [![Daymark after polishing](../../docs/media/after-desktop.jpg)](../../docs/media/after-desktop.jpg) |
 | [Starter HTML](before.html) · [Starter CSS](before.css) | [Polished HTML](after.html) · [Polished CSS](after.css) |
 
-Both desktop captures use a **1200 × 1000** browser viewport with all three projects visible. The single-column layout was also checked at **390 × 844**: [before mobile](../../docs/media/before-mobile.jpg) and [after mobile](../../docs/media/after-mobile.jpg) are full-page captures at that width.
+Both desktop captures use a **1200 × 1000** browser viewport with all three projects visible.
+
+The mobile comparison uses matching **390 × 844** viewports. The starter's 440px cards spill off the screen; the polished cards fit the available width.
+
+| Before on mobile | After on mobile |
+| --- | --- |
+| [![Starter on a 390px screen: the card and its content extend past the right edge](../../docs/media/before-mobile-viewport.jpg)](../../docs/media/before-mobile-viewport.jpg) | [![Polished layout on the same 390px screen: readable copy and a complete square illustration](../../docs/media/after-mobile-viewport.jpg)](../../docs/media/after-mobile-viewport.jpg) |
+
+Full-page captures: [before](../../docs/media/before-mobile.jpg?revision=2) and [after](../../docs/media/after-mobile.jpg). The before capture includes the content outside the viewport; the matching viewport images above show the visible clipping.
 
 ## What changed
 
@@ -30,13 +39,15 @@ Measured in the desktop browser:
 
 | Check | Before | After |
 | --- | --- | --- |
-| Card padding | 18px / 27px / 14px | 24px for each card |
-| Square preview widths | 251.67px / 304.66px / 290.98px | 302px for each preview |
-| Preview top positions | 466.15px / 482.65px / 447.35px | 494.77px for each preview |
-| Action top positions | 736.82px / 806.31px / 757.34px | 812.77px for each action |
-| Mobile horizontal overflow | None at the tested width | None at the tested width |
+| Card title sizes | 36px / 28px / 19px | 23px for each card |
+| Card padding | 10px / 28px 18px / 26px | 24px for each card |
+| Preview dimensions | 342.38 × 156px / 415.09 × 190px / 162.90 × 162.90px | 302 × 302px for each preview |
+| Artwork framing | First two illustrations cropped; third undersized | All three complete and equally sized |
+| Preview top positions | 548.27px / 619.47px / 577.32px | 494.77px for each preview |
+| Action top positions | 722.27px / 833.47px / 769.22px | 812.77px for each action |
+| Mobile document width at 390px | 452px: 62px of horizontal overflow | 390px: no horizontal overflow |
 
-The fix uses shared spacing tokens and flex layout. `margin-top: auto` aligns the artwork and action rows while letting descriptions grow. The approved square images fill their content width without cropping. The toolbar groups its controls consistently, and the title uses a clearer weight and size within the same typeface.
+The polished stylesheet uses the existing typeface, spacing tokens, and base components. It replaces the competing emphasis and one-off card treatments with a clear heading hierarchy and consistent controls. `margin-top: auto` aligns the artwork and action rows while letting descriptions grow. The approved square images fill their content width without cropping, and the narrow grid fits the screen without hiding overflow.
 
 ## What stayed the same
 
@@ -72,6 +83,6 @@ To try your own pass, copy the starter and ask your assistant to follow `POLISH.
 
 ## Media provenance
 
-The SVG illustrations are original sample assets created for this repository. Captures contain no private application code, customer data, or third-party website content. The animated comparison is 960 × 864, lasts about 4.83 seconds, and plays once. Static alternatives are linked above.
+The SVG illustrations are original sample assets created for this repository. Captures contain no private application code, customer data, or third-party website content. The animated comparison is 960 × 912, lasts about 4.83 seconds, and plays once. Static alternatives are linked above.
 
 The [verification record](verification.json) includes the observed measurements and source/media hashes. The example is covered by the repository's CC BY 4.0 license.

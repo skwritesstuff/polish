@@ -1,28 +1,61 @@
-/* Starter fixture: deliberately inconsistent spacing and media sizing. */
-.site-header { padding: 24px 42px; gap: 87px; }
-main { padding: 39px 42px 20px; }
-.intro { margin-bottom: 37px; }
-.eyebrow { margin-bottom: 7px; }
-h1 { font-size: 38px; font-weight: 550; margin-bottom: 17px; }
-.toolbar { gap: 31px; margin-bottom: 19px; }
-.cards { gap: 17px; }
-.card { padding: 18px; }
-.card:nth-child(2) { padding: 27px; }
-.card:nth-child(3) { padding: 14px; }
-.card h3 { font-size: 23px; font-weight: 600; margin: 11px 0 12px; letter-spacing: -.5px; }
-.card:nth-child(2) h3 { font-size: 26px; margin-top: 15px; }
-.card:nth-child(3) h3 { margin-top: 17px; }
-.description { margin-bottom: 17px; }
-.project-art { width: 78%; margin: 0 auto; }
-.card:nth-child(2) .project-art { width: 100%; }
-.card:nth-child(3) .project-art { width: 88%; }
-.card-footer { margin-top: 19px; }
-main > footer { margin-top: 31px; }
+/* Deliberately rough demo starter, not a production app or benchmark.
+   Seeded problems: competing emphasis, unrelated component styles, cropped
+   square artwork, a drifting grid, and desktop sizing on narrow screens. */
+body { background: radial-gradient(ellipse at 10% 35%, #7963b837, transparent 55%), radial-gradient(ellipse at 95% 80%, #d9fb8c16, transparent 50%); }
+.site-header { padding: 18px 22px; gap: 78px; border-bottom: 2px solid var(--violet); }
+nav { gap: 8px; }
+nav a { padding: 12px 17px; border: 1px solid var(--violet); border-radius: 24px; }
+nav a[aria-current] { color: var(--ink); background: var(--violet); font-weight: 700; }
+.workspace-label { padding: 10px 13px; border: 1px solid var(--lime); border-radius: 6px; color: var(--lime); }
+main { padding: 24px 22px 20px; }
+.intro { display: block; position: relative; padding: 24px 20px; margin-bottom: 12px; text-align: center; border: 1px solid #bcb1ff70; border-radius: 24px; background: linear-gradient(120deg, #65568e60, #141419, #46532845); box-shadow: 0 0 36px #bcb1ff21; }
+.eyebrow { margin-bottom: 10px; font-size: 14px; letter-spacing: 4px; }
+h1 { font-size: 64px; font-weight: 800; letter-spacing: -3px; text-transform: uppercase; margin-bottom: 8px; text-shadow: 0 0 22px #bcb1ff70; }
+.lede { font-size: 12px; }
+.project-total { position: absolute; right: 18px; bottom: -55px; display: flex; align-items: center; gap: 5px; padding: 7px 12px; border-radius: 20px; background: var(--lime); color: var(--ink); font-size: 19px; }
+.project-total span { color: var(--ink); margin: 0; font-size: 10px; }
+.toolbar { gap: 12px; margin: 16px 0 24px; flex-wrap: wrap; }
+.toolbar > h2 { width: 100%; font-size: 29px; text-transform: uppercase; letter-spacing: 2px; color: var(--violet); }
+.filters { gap: 12px; padding: 0; border: 0; background: transparent; }
+.filters button { padding: 12px 17px; border: 1px solid var(--violet); border-radius: 2px; color: var(--violet); }
+.filters button[aria-pressed="true"] { color: var(--ink); background: var(--lime); border-radius: 22px; font-weight: 750; }
+.sort-label { margin-left: 16px; padding: 10px; border: 1px dashed var(--muted); font-size: 10px; }
+.cards { grid-template-columns: .95fr 1.18fr .8fr; gap: 13px; align-items: start; }
+.card { padding: 10px; border: 2px solid var(--violet); border-radius: 4px; background: linear-gradient(155deg, #39314f, var(--surface) 60%); box-shadow: 0 12px 26px #0005; }
+.card:nth-child(2) { padding: 28px 18px; margin-top: 32px; border-color: var(--lime); border-radius: 28px; background: var(--surface); text-align: center; }
+.card:nth-child(3) { padding: 26px; margin-top: 10px; border: 1px solid var(--muted); border-radius: 0; background: #292630; }
+.category { padding: 5px 8px; border: 1px solid currentColor; border-radius: 20px; color: var(--violet); font-size: 11px; }
+.card:nth-child(2) .category { background: var(--lime); border-color: var(--lime); color: var(--ink); border-radius: 2px; }
+.card:nth-child(3) .category { padding: 0; border: 0; }
+.favorite { font-size: 24px; }
+.card h3 { font-size: 36px; font-weight: 800; margin: 9px 0 7px; letter-spacing: -1.5px; }
+.card:nth-child(2) h3 { font-size: 28px; font-weight: 500; margin: 20px 0 3px; letter-spacing: 0; }
+.card:nth-child(3) h3 { font-size: 19px; font-weight: 450; text-transform: uppercase; letter-spacing: 2px; margin: 30px 0 18px; }
+.description { font-size: 11px; line-height: 1.45; margin-bottom: 12px; }
+.card:nth-child(2) .description { font-size: 14px; margin-bottom: 27px; }
+.card:nth-child(3) .description { margin-bottom: 20px; }
+.project-art { width: 100%; height: 156px; object-fit: cover; border-radius: 0; }
+.card:nth-child(2) .project-art { height: 190px; border-radius: 20px; }
+.card:nth-child(3) .project-art { width: 64%; height: auto; margin: 0 auto; border: 6px solid var(--ink); }
+.card-footer { display: flex; flex-direction: column; align-items: stretch; gap: 9px; margin-top: 18px; }
+.card-footer > span { font-size: 9px; }
+.open-project { padding: 14px 9px; border-radius: 2px; background: var(--violet); color: var(--ink); font-size: 16px; font-weight: 750; }
+.card:nth-child(2) .card-footer { flex-direction: column-reverse; margin-top: 24px; }
+.card:nth-child(2) .open-project { background: var(--lime); border-radius: 24px; text-transform: uppercase; letter-spacing: 2px; font-size: 12px; }
+.card:nth-child(3) .card-footer { margin-top: 29px; align-items: start; gap: 17px; }
+.card:nth-child(3) .open-project { background: transparent; color: var(--violet); border: 1px solid var(--violet); border-radius: 6px; font-size: 11px; font-weight: 400; }
+main > footer { margin-top: 32px; padding: 12px 0; border-top: 1px dashed var(--violet); }
 @media (max-width: 700px) {
-  .site-header { padding: 20px 18px; gap: 20px; }
-  main { padding: 30px 18px 20px; }
-  h1 { font-size: 32px; }
-  .toolbar { flex-wrap: wrap; gap: 17px; }
-  .sort-label { width: 100%; margin: 0; }
-  .cards { gap: 17px; }
+  .site-header { padding: 20px 12px; gap: 12px; }
+  nav a { padding: 8px; font-size: 10px; }
+  main { padding: 18px 12px 20px; }
+  .intro { padding: 24px 12px; }
+  .eyebrow { font-size: 12px; letter-spacing: 2px; }
+  h1 { font-size: 52px; letter-spacing: -2px; }
+  .toolbar { gap: 14px; margin-top: 24px; }
+  .toolbar > h2 { font-size: 25px; }
+  .sort-label { margin: 0; }
+  .cards { grid-template-columns: 1fr; gap: 14px; }
+  .card { min-width: 440px; }
+  .card:nth-child(2), .card:nth-child(3) { margin-top: 0; }
 }

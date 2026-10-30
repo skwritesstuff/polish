@@ -1,8 +1,9 @@
 # Daymark demo profile
 
 Daymark is a fictional project workspace created for a reproducible Polish demo.
-The starter intentionally includes common card-layout inconsistencies. It is not
-a customer project, a production app, or an independent benchmark.
+The starter intentionally includes an overemphasized hero, inconsistent controls,
+cropped artwork, mismatched cards, and horizontal overflow on mobile. It is not a
+customer project, a production app, or an independent benchmark.
 
 ## Preserve
 
@@ -14,15 +15,16 @@ a customer project, a production app, or an independent benchmark.
 
 ## Task
 
-Polish the project grid. Fix inconsistent padding, uneven preview sizes, and
-misaligned action rows. Improve the toolbar and title hierarchy using the existing
-identity. Keep all copy, artwork, links, and behavior intact.
+Polish the whole workspace. Establish a clear heading hierarchy, unify controls
+and card styles, show the complete square artwork, and fix the mobile overflow.
+Keep the approved brand, all copy, artwork, links, and behavior intact.
 
 ## Verification
 
 Serve this directory locally. Inspect the same state at 1200 x 1000 and 390 x 844.
-Compare card padding, artwork dimensions, and action alignment. Check favorite
-filtering, the details dialog, keyboard focus, and narrow-screen overflow.
+Compare heading sizes, card padding, artwork dimensions, and action alignment.
+Check favorite filtering, the details dialog, keyboard focus, and narrow-screen
+overflow. Preserve the starter's seeded defects in the before version.
 
 ## Delivery
 

@@ -1,44 +1,54 @@
 {
   "date": "2026-10-30",
-  "fixture": "Daymark (purpose-built sample with seeded inconsistencies)",
+  "revision": 2,
+  "fixture": "Daymark (purpose-built sample with deliberately expanded defects)",
+  "revision_note": "Starter stylesheet expanded to demonstrate more visible problems; the finished stylesheet and shared source remain unchanged.",
   "capture": "Codex in-app browser; no physical device testing",
   "before_desktop": {
     "cards": [
       {
-        "actionY": 736.8203125,
+        "actionY": 722.265625,
         "art": {
-          "height": 251.671875,
-          "width": 251.671875,
-          "x": 96.4921875,
-          "y": 466.1484375
+          "fit": "cover",
+          "height": 156,
+          "width": 342.375,
+          "x": 34,
+          "y": 548.265625
         },
         "name": "Paper trail",
-        "padding": "18px"
+        "padding": "10px",
+        "titleSize": "36px"
       },
       {
-        "actionY": 806.3125,
+        "actionY": 833.46875,
         "art": {
-          "height": 304.6640625,
-          "width": 304.6640625,
-          "x": 447.6640625,
-          "y": 482.6484375
+          "fit": "cover",
+          "height": 190,
+          "width": 415.0859375,
+          "x": 421.375,
+          "y": 619.46875
         },
         "name": "Room to think",
-        "padding": "27px"
+        "padding": "28px 18px",
+        "titleSize": "28px"
       },
       {
-        "actionY": 757.3359375,
+        "actionY": 769.21875,
         "art": {
-          "height": 290.984375,
-          "width": 290.984375,
-          "x": 832.1640625,
-          "y": 447.3515625
+          "fit": "cover",
+          "height": 162.8984375,
+          "width": 162.8984375,
+          "x": 942.28125,
+          "y": 577.3203125
         },
         "name": "One thing",
-        "padding": "14px"
+        "padding": "26px",
+        "titleSize": "19px"
       }
     ],
+    "documentHeight": 1040,
     "documentWidth": 1200,
+    "headingSize": "64px",
     "viewport": {
       "height": 1000,
       "width": 1200
@@ -49,55 +59,124 @@
       {
         "actionY": 812.765625,
         "art": {
+          "fit": "contain",
           "height": 302,
           "width": 302,
           "x": 73,
           "y": 494.765625
         },
         "name": "Paper trail",
-        "padding": "24px"
+        "padding": "24px",
+        "titleSize": "23px"
       },
       {
         "actionY": 812.765625,
         "art": {
+          "fit": "contain",
           "height": 302,
           "width": 302,
           "x": 449,
           "y": 494.765625
         },
         "name": "Room to think",
-        "padding": "24px"
+        "padding": "24px",
+        "titleSize": "23px"
       },
       {
         "actionY": 812.765625,
         "art": {
+          "fit": "contain",
           "height": 302,
           "width": 302,
           "x": 825,
           "y": 494.765625
         },
         "name": "One thing",
-        "padding": "24px"
+        "padding": "24px",
+        "titleSize": "23px"
       }
     ],
+    "documentHeight": 1000,
     "documentWidth": 1200,
+    "headingSize": "44px",
     "viewport": {
       "height": 1000,
       "width": 1200
     }
   },
-  "after_mobile": {
-    "viewport": {
-      "width": 390,
-      "height": 844
-    },
-    "documentWidth": 390,
-    "documentHeight": 2079,
-    "previewDimensions": [
-      292,
-      292
+  "before_mobile": {
+    "cards": [
+      {
+        "cardWidth": 440,
+        "name": "Paper trail",
+        "padding": "10px",
+        "preview": {
+          "height": 156,
+          "width": 416
+        },
+        "right": 452
+      },
+      {
+        "cardWidth": 440,
+        "name": "Room to think",
+        "padding": "28px 18px",
+        "preview": {
+          "height": 190,
+          "width": 400
+        },
+        "right": 452
+      },
+      {
+        "cardWidth": 440,
+        "name": "One thing",
+        "padding": "26px",
+        "preview": {
+          "height": 247.0390625,
+          "width": 247.0390625
+        },
+        "right": 452
+      }
     ],
-    "cardPadding": "24px"
+    "documentHeight": 2031,
+    "documentWidth": 452,
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  "after_mobile": {
+    "cards": [
+      {
+        "name": "Paper trail",
+        "padding": "24px",
+        "preview": {
+          "height": 292,
+          "width": 292
+        }
+      },
+      {
+        "name": "Room to think",
+        "padding": "24px",
+        "preview": {
+          "height": 292,
+          "width": 292
+        }
+      },
+      {
+        "name": "One thing",
+        "padding": "24px",
+        "preview": {
+          "height": 292,
+          "width": 292
+        }
+      }
+    ],
+    "documentHeight": 2079,
+    "documentWidth": 390,
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
   },
   "behavior_checks": {
     "favorites_shows": 2,
@@ -108,24 +187,27 @@
   },
   "baseline_source_sha256": {
     "before.html": "7e4b11b793499b7752279a0ab3ab0a531b50cc024dde2822792cf609d6b5236c",
-    "before.css": "e49bfbb70ca5dc423c0ee45c1198b9a55c9329e1815516e35253950e0aec0979",
+    "before.css": "f88dfbb4d67ead429d4c33176bfceeac21c41909c6f17e5f9838670e70c42ab6",
     "shared.css": "bdd089d5980727202ed1dab0d55b45d08a62206b87fa8734ecb9a68c8c5aa89d",
     "app.js": "adaeee7e8a8500e6c7219833212608d0aedee5f6170e503e1cf86e388e89c500",
     "assets/notes.svg": "e6ebae83ed8087dec96cc8917daaab22dc134b15765033f1cc57f24b7c7f82cf",
     "assets/ideas.svg": "e8f043511428e3fcaa3c76686b1e089bb2f62087d55134cb22c1af3e2281ad01",
-    "assets/focus.svg": "1ff9a3da8eae789ffa79c6fca0c4e4859bccf3260e9c09997bce5e125468b70c"
+    "assets/focus.svg": "1ff9a3da8eae789ffa79c6fca0c4e4859bccf3260e9c09997bce5e125468b70c",
+    "after.css": "62c36811d3579228a538e9987a2e34bd43de6a8b49cfed906b2366ab956dcb54"
   },
   "media_sha256": {
     "after-desktop.jpg": "31f261f9f3d8fd326dd3268993572562c98b1350e5e3b67178f309caa5271734",
+    "after-mobile-viewport.jpg": "dd74040007791708735075ec8637d62b19c1e91775182dac4e9968d8269b73a1",
     "after-mobile.jpg": "b6766259a0dbcd039c6a278a86a4879edcde324569e3abab2e8c02ae5bd8a0f1",
-    "before-desktop.jpg": "d1f5898dec7e303896f2ce9cea6b7d228e5c2439456b80ba9d69b19f7623f7e6",
-    "before-mobile.jpg": "d71699b7abd72a43048d531cdfee08bd8f9e6bd826152c72d38dcfcd2cb7caf9",
-    "polish-demo.gif": "2e2cbfb937e33d343611bf31ec4d21e9eeb663fa15fc0e3c8c45103450023af1"
+    "before-desktop.jpg": "4c2edef278007deec03a9c057c3db5f82ea6ba88fe4b3b415c33235426d6b2a7",
+    "before-mobile-viewport.jpg": "b8c297ea1fee680e3a5da36dae6e7865f78b4519709ba695bc9b5d47b0c63a9b",
+    "before-mobile.jpg": "344f10fa0571b5cb7408b5959ec55828995a47050d2313b0bc5d13a0947058c2",
+    "polish-demo.gif": "35171d9618dfeeb45c7a8c509726f384950d3fefdf3eff338d782e6e1446c972"
   },
   "demo": {
     "format": "gif",
     "width": 960,
-    "height": 864,
+    "height": 912,
     "frames": 58,
     "duration_seconds": 4.83,
     "loops": false,

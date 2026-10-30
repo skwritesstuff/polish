@@ -8,11 +8,11 @@ It starts with the project's approved brand and design system. A colorful logo, 
 
 ## See a real pass
 
-Actual browser captures of a Polish pass on **Daymark**, a fictional starter with deliberately uneven spacing. The logo, palette, artwork, copy, and interactions stay the same; the layout CSS changes.
+Oversized headings, mismatched controls, cropped artwork, and a broken mobile grid become one coherent interface. **Daymark is a deliberately rough fictional starter** made for this comparison. These are actual browser captures; the logo, approved palette, artwork, copy, and interactions stay the same.
 
-[![Before and after: Daymark's uneven preview sizes and action rows become a consistent grid while its violet, coral, and lime identity stays intact.](docs/media/polish-demo.gif)](examples/daymark/README.md)
+[![Before and after: a cluttered Daymark prototype with mismatched cards and cropped artwork becomes a clear, consistent interface with complete square illustrations.](docs/media/polish-demo.gif?revision=2)](examples/daymark/README.md)
 
-The GIF plays once in under five seconds. View the [static before](docs/media/before-desktop.jpg) and [static after](docs/media/after-desktop.jpg), or inspect the [source, mobile captures, and measured checks](examples/daymark/README.md).
+The GIF plays once in under five seconds. View the [static before](docs/media/before-desktop.jpg?revision=2) and [static after](docs/media/after-desktop.jpg), or inspect the [source, mobile captures, and measured checks](examples/daymark/README.md).
 
 ## Use it
 
