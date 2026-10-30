@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#d9fb8c"/>
+  <circle cx="300" cy="290" r="158" fill="none" stroke="#353d27" stroke-width="3"/>
+  <circle cx="300" cy="290" r="112" fill="none" stroke="#353d27" stroke-width="3"/>
+  <circle cx="300" cy="290" r="67" fill="#353d27"/>
+  <path d="M300 88V492M98 290H502" stroke="#353d27" stroke-width="2"/>
+  <circle cx="300" cy="290" r="12" fill="#d9fb8c"/>
+  <text x="36" y="62" font-family="Arial,sans-serif" font-size="17" font-weight="bold" letter-spacing="4" fill="#353d27">DAYMARK / FOCUS</text>
+  <text x="36" y="550" font-family="Arial,sans-serif" font-size="38" font-weight="bold" letter-spacing="-1" fill="#353d27">One thing. A little better.</text>
+</svg>

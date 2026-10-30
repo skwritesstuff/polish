@@ -1,0 +1,28 @@
+/* Starter fixture: deliberately inconsistent spacing and media sizing. */
+.site-header { padding: 24px 42px; gap: 87px; }
+main { padding: 39px 42px 20px; }
+.intro { margin-bottom: 37px; }
+.eyebrow { margin-bottom: 7px; }
+h1 { font-size: 38px; font-weight: 550; margin-bottom: 17px; }
+.toolbar { gap: 31px; margin-bottom: 19px; }
+.cards { gap: 17px; }
+.card { padding: 18px; }
+.card:nth-child(2) { padding: 27px; }
+.card:nth-child(3) { padding: 14px; }
+.card h3 { font-size: 23px; font-weight: 600; margin: 11px 0 12px; letter-spacing: -.5px; }
+.card:nth-child(2) h3 { font-size: 26px; margin-top: 15px; }
+.card:nth-child(3) h3 { margin-top: 17px; }
+.description { margin-bottom: 17px; }
+.project-art { width: 78%; margin: 0 auto; }
+.card:nth-child(2) .project-art { width: 100%; }
+.card:nth-child(3) .project-art { width: 88%; }
+.card-footer { margin-top: 19px; }
+main > footer { margin-top: 31px; }
+@media (max-width: 700px) {
+  .site-header { padding: 20px 18px; gap: 20px; }
+  main { padding: 30px 18px 20px; }
+  h1 { font-size: 32px; }
+  .toolbar { flex-wrap: wrap; gap: 17px; }
+  .sort-label { width: 100%; margin: 0; }
+  .cards { gap: 17px; }
+}

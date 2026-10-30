@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#bcb1ff"/>
+  <path d="M210 200H455V450H210Z" fill="#7e6dc0" transform="rotate(16 330 320)"/>
+  <path d="M145 155H390V405H145Z" fill="#e5dfff" transform="rotate(-10 270 280)"/>
+  <path d="m188 235 155-27m-147 73 155-27m-147 73 112-20" stroke="#5d4e94" stroke-width="9"/>
+  <text x="36" y="62" font-family="Arial,sans-serif" font-size="17" font-weight="bold" letter-spacing="4" fill="#39304d">DAYMARK / NOTES</text>
+  <text x="36" y="550" font-family="Arial,sans-serif" font-size="38" font-weight="bold" letter-spacing="-1" fill="#39304d">A place for the little things.</text>
+</svg>

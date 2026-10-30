@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Daymark — a Polish demo fixture</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="before.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
+  <header class="site-header">
+    <a class="brand" href="#projects" aria-label="Daymark home">
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <span>daymark<span class="brand-dot">.</span></span>
+    </a>
+    <nav aria-label="Workspace"><a href="#projects" aria-current="page">My projects</a><a href="#about">About this demo</a></nav>
+    <span class="workspace-label"><span aria-hidden="true"></span> Personal workspace</span>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">A LITTLE SPACE TO MAKE THINGS</p><h1 id="page-title">Good ideas start here<span>.</span></h1><p class="lede">Your notes, plans, and small beginnings. All in one place.</p></div>
+      <span class="project-total">03 <span>projects</span></span>
+    </section>
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="toolbar"><h2 id="projects-title">Your projects</h2><div class="filters" role="group" aria-label="Filter projects"><button type="button" data-filter="all" aria-pressed="true">All projects <span>3</span></button><button type="button" data-filter="favorites" aria-pressed="false">Favorites <span>2</span></button></div><p class="sort-label">Recently updated <span aria-hidden="true">↓</span></p></div>
+      <div class="cards">
+        <article class="card" data-project="Paper trail" data-favorite="true">
+          <div class="card-heading"><span class="category">NOTES</span><span class="favorite" role="img" aria-label="Favorite">✦</span></div>
+          <h3>Paper trail</h3>
+          <p class="description">A home for stray thoughts, useful links, and the things worth keeping.</p>
+          <img class="project-art" src="assets/notes.svg" width="600" height="600" alt="Paper trail: violet paper shapes on a lavender square">
+          <div class="card-footer"><span>Edited today</span><button type="button" class="open-project" aria-label="Open Paper trail">Open project <span aria-hidden="true">↗</span></button></div>
+        </article>
+        <article class="card" data-project="Room to think" data-favorite="true">
+          <div class="card-heading"><span class="category">IDEAS</span><span class="favorite" role="img" aria-label="Favorite">✦</span></div>
+          <h3>Room to think</h3>
+          <p class="description">Collect references, connect the dots, and give your next big idea a little room to grow.</p>
+          <img class="project-art" src="assets/ideas.svg" width="600" height="600" alt="Room to think: orange circular forms on a warm coral square">
+          <div class="card-footer"><span>Edited yesterday</span><button type="button" class="open-project" aria-label="Open Room to think">Open project <span aria-hidden="true">↗</span></button></div>
+        </article>
+        <article class="card" data-project="One thing" data-favorite="false">
+          <div class="card-heading"><span class="category">FOCUS</span><span class="favorite empty" role="img" aria-label="Not a favorite">✦</span></div>
+          <h3>One thing</h3>
+          <p class="description">Less on your list. More on what matters.</p>
+          <img class="project-art" src="assets/focus.svg" width="600" height="600" alt="One thing: a dark target on a bright lime square">
+          <div class="card-footer"><span>Edited 2 days ago</span><button type="button" class="open-project" aria-label="Open One thing">Open project <span aria-hidden="true">↗</span></button></div>
+        </article>
+      </div>
+      <p class="filter-status" role="status" aria-live="polite"></p>
+    </section>
+    <footer id="about"><span class="footer-mark" aria-hidden="true">✳</span><p>A fictional interface made for the <a href="https://github.com/skwritesstuff/polish">Polish</a> demo. No account or data collection.</p><span>MAKE A LITTLE ROOM.</span></footer>
+  </main>
+  <dialog aria-labelledby="dialog-title"><div class="dialog-heading"><span class="eyebrow">PROJECT PREVIEW</span><button type="button" class="close-dialog" aria-label="Close project preview">×</button></div><h2 id="dialog-title"></h2><p id="dialog-description"></p><p class="dialog-note">This is a sample workspace. Your project data stays untouched.</p><button type="button" class="close-dialog primary">Back to projects</button></dialog>
+</body>
+</html>
